@@ -53,6 +53,8 @@ task.wait()
 end
 task.wait(2)
 game:GetService("ReplicatedStorage").Remotes.ComputerState:FireServer("Victory")
+task.wait(1)
+game:GetService("ReplicatedStorage").Remotes.ComputerState:Destroy()
 game.Players.LocalPlayer.PlayerGui.RealComputerScreenGui.Enabled = false
 game.Players.LocalPlayer.Character.Humanoid.Sit = false  -- copy paste it into your script i dare you
 task.wait(1)
