@@ -1,5 +1,5 @@
 --wow please don't upload to youtube another video with title ''AUTO GET METAVERSE'' with ''your script'' that copy pasted everything from there. at least credit me alright 😘😘😘😘
-
+-- Warning: Script doesn't works yet
 
 if game.PlaceId == 136005148166028 then
 if not game.IsLoaded then
