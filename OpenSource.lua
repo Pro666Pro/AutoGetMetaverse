@@ -127,7 +127,7 @@ task.wait(1)
 -- Teleport to trigger
 while task.wait() do game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249, 94, -62820) end
   
-elseif game.PlaceId == 11520107397 or game.PlaceId == 9015014224 or game.PlaceId == 6403373529 then
+elseif game.PlaceId == 11520107397 or game.PlaceId == 9015014224 or game.PlaceId == 6403373529 or game.PlaceId == 124596094333302 then
 if not game.IsLoaded then
 game.Loaded:Wait()
 end
