@@ -14,6 +14,22 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 
 local Platform = (game.UserInputService.TouchEnabled and not game.UserInputService.MouseEnabled) and "Mobile" or "PC"
+
+if Platform == "Mobile" then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Mobile Device",
+	Text = "Mobile device tested and supported.",
+    Icon = "rbxassetid://125704683916878",
+	Duration = 36000
+})
+elseif Platform == "PC" then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "PC Device",
+	Text = "PC device supported but not tested. ( May not work )",
+    Icon = "rbxassetid://125704683916878",
+	Duration = 36000
+})
+end	
 fireclickdetector(workspace.Kitchen.Fridge.HitBox.ClickDetector)
 task.wait(1)
 fireclickdetector(workspace.Kitchen.Fridge.GrantAward.ClickDetector)
