@@ -2,6 +2,14 @@ if not game.IsLoaded then
 game.Loaded:Wait()
 end
 
+-- Credits, message is not squished up cuz it looks bad
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Credits to Nexer1234_AnotherAlt",
+	Text = "Made by @nexer1234 ( youtube & discord )",
+    Icon = "rbxassetid://125704683916878",
+	Duration = 36000
+})
+
 if getgenv().AutoGetMetaverseExecuted == true then return end
 
 if getgenv or getgenv() then
@@ -25,14 +33,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Button1 = "Oh..."
 })
 end
-
--- Credits, message is not squished up cuz it looks bad
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Credits to Nexer1234_AnotherAlt",
-	Text = "Made by @nexer1234 ( youtube & discord )",
-    Icon = "rbxassetid://125704683916878",
-	Duration = 36000
-})
 
 if game.PlaceId == 136005148166028 then
 
