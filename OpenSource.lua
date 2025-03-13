@@ -64,6 +64,11 @@ else
 game.Players.LocalPlayer.Character["Brewzucki"]:Activate()
 task.wait(2)
 game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+if game.Players.LocalPlayer.Backpack:FindFirstChild("Brewzucki") then
+game.Players.LocalPlayer.Backpack["Brewzucki"]:Destroy()
+else
+game.Players.LocalPlayer.Character["Brewzucki"]:Destroy()
+end
 end
 task.wait(5)
 fireclickdetector(workspace.BasementTable.HitBox.ClickDetector)
